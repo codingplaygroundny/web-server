@@ -5,7 +5,7 @@ const key='6c8dd76d81d1d7583a01bd714895982f'
 
 
 const forecast= (address,callback)=>{
-    const url=`http://localhost:3000/weather?address=${address}`
+    const url=`/weather?address=${address}`
     fetch(url)
         .then((response)=>response.json())
         .then((data)=>{
